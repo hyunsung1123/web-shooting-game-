@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html>     
+        <head>
+            <meta charset="utf-8" />
+            <title>Star Trek</title>
+            <link rel="stylesheet" href="./style.css">
+        </head>
+        <body>
+            <center><p id="title">JUST KILL IT!</p></center>
+            <hr> 
+            <script>var user=prompt("환영합니디!. 사용자의 이름을 입력해주세요 : ", "이름"); </script> <!-- 게임시작전 사용자의 이름을 받아오는 기능 -->
+            <canvas id="gameCanvas" width="1200" height="550"></canvas>  
+            <audio id="musicPlayer" src="./sound/Game Start Music.mp3"loop onloadstart="this.volume=0.3"></audio>
+            <div id="button">
+            <button id="explanation" onclick="ExplainGame()" value="OPen Game explanation">게임 설명서</button>
+            <button id="Musicbtn" onclick="playbgm();" value="BGM Pause">BGM Pause</button>
+            <button id="gameStart" onclick="StartGame();" abled value="GameStart">GameStart</button>
+            <button id="gamePause"  onclick="PauseGame();" disabled='disabled' value="GamePause">GamePause</button>
+            <button id="gameResume"  onclick="Resumegame();" disabled='disabled'value="GameResume">GameResume</button>
+            </div>
+            <script src="./shooting.js"></script>
+        </body>
+</html>
